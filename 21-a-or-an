@@ -1,8 +1,8 @@
 public String aOrAn(String word) {
     if (word.startsWith('a')){
-        return 'an ';
+        return 'an ' + word;
     }
     else {
-        return 'a ';
+        return 'a ' + word;
     }
 }
