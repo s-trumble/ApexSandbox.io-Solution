@@ -1,6 +1,6 @@
 public Boolean sumEquals(Integer a, Integer b, Integer c) {
     Integer ab = a + b; 
-    if (ab = c){
+    if (ab == c){
         return true;
     }
     else {
