@@ -11,7 +11,7 @@ public Boolean companionPlants(String plant1, String plant2) {
     else if (plants[0] == 'lettuce' && plants[1] == 'onions'){
         return true;
     }
-    else if (plants[0] == 'carrots' && plants[1] 'onions'){
+    else if (plants[0] == 'carrots' && plants[1] == 'onions'){
         return true;
     }
     else if (plants[0] == 'onions' && plants[1] == 'tomatoes'){
