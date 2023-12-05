@@ -1,4 +1,15 @@
 public String formatName(String firstName, String lastName) {
-    String name = lastName + ', ' + firstName;
+    String name = null
+    if (firstName == null){
+        name = lastName;
+        return name;    
+    }
+    else if (lastName == null){
+        name = firstName;
+        return name;
+    }
+    else {
+    name = lastName + ', ' + firstName;
     return name;
+    }
 }
