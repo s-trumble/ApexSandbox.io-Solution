@@ -12,7 +12,7 @@ public Boolean isPrime(Integer num) {
                 return true;
             }
             else {
-            i = i + 1;
+            i++;
             }
         }
         return false;
