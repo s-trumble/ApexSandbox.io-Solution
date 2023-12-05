@@ -1,6 +1,6 @@
 public Integer sumToN(Integer n) {
-    integer sum = 0;
-    for(integer i =1; i < n; i++){
+    Integer sum = 0;
+    for(Integer i = 1; i < n; i++){
         sum = sum + i;
         return sum;
     }
