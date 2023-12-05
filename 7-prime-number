@@ -6,13 +6,11 @@ public Boolean isPrime(Integer num) {
         return false;
     }
     else{
-        Integer i = 2;
-        while (i < num){
-            if (Math.mod(num,i)==0){
+        for (Integer i = 1; i < num; i++){
+            if (Math.mod(age,i)==0){
                 return true;
             }
-            i++;
-            }
+        }
     
         return false;
     }
