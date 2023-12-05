@@ -1,8 +1,8 @@
 public Boolean isPrime(Integer num) {
-    if (age == 2){
+    if (num == 2){
         return true;
     }
-    else if (Math.mod(age,2)==0){
+    else if (Math.mod(num,2)==0){
         return false;
     }
     else{
