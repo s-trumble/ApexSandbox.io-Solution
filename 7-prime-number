@@ -6,6 +6,15 @@ public Boolean isPrime(Integer num) {
         return false;
     }
     else{
+        Integer int = 1;
+        while (int < num){
+            if (Math.mod(num,int)==0){
+                return true;
+            }
+            else {
+            int = int + 1;
+            }
+        }
         return false;
     }
 }
