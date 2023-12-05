@@ -1,5 +1,5 @@
 public String formatName(String firstName, String lastName) {
-    String name = null
+    String name = null;
     if (firstName == null){
         name = lastName;
         return name;    
