@@ -1,7 +1,7 @@
 public String changeTimeFormat(String strTime) {
     //find first 2 digits before colon, convert to number
     String strHours = strTime.substringBefore(':');
-    Integer intHours = String.valueOf(strHours);
+    Integer intHours = Integer.valueOf(strHours);
     String minutes = strTime.substringAfter(':');
     String ampm;
     if (intHours > 12 ){
