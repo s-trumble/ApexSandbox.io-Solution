@@ -20,7 +20,7 @@ public String changeTimeFormat(String strTime) {
         ampm = 'AM';
 
     }
-    else if (intHours == 12){
+    else if (intHours = 12){
         ampm = 'PM';
     }
     else {
