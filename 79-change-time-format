@@ -20,10 +20,12 @@ public String changeTimeFormat(String strTime) {
         ampm = 'AM';
     }
 
-
+    else if (intHours = 12){
+        ampm = 'PM';
+    }
     else {
         ampm = 'PM';
-        intHours = intHours  12;
+        intHours = intHours + 12;
         strHours = String.valueOf(intHours);
     }
     return strHours + ':' + minutes + ' '+ ampm;
