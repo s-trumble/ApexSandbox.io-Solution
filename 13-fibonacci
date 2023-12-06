@@ -1,0 +1,9 @@
+public Integer fibonacci(Integer n) {
+    //code here
+    List<Integer> numbers = new List<Integer>{1,1}
+    for(Integer i = 3; i <= n; i++ ){
+        i = i;
+        numbers.add(i);
+
+    }
+}
