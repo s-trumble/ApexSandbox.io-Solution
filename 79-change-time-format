@@ -16,6 +16,10 @@ public String changeTimeFormat(String strTime) {
         ampm = 'AM';         
         strHours = '0' + String.valueOf(intHours);
     }
+    else if (intHours < 12){
+        ampm = 'AM';
+        
+    }
     else {
         ampm = 'PM';
     }
