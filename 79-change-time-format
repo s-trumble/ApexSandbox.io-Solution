@@ -25,7 +25,7 @@ public String changeTimeFormat(String strTime) {
     }
     else {
         ampm = 'PM';
-        intHours = intHours + 12;
+        intHours = intHours;
         strHours = String.valueOf(intHours);
     }
     return strHours + ':' + minutes + ' '+ ampm;
