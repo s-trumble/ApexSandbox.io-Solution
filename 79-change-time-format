@@ -7,7 +7,7 @@ public String changeTimeFormat(String strTime) {
     if (intHours > 12 ){
         ampm = 'PM';
         intHours = intHours + 12; 
-        strHours = intHours.valueOf();
+        strHours = String.valueOf(inHours);
     }
     else {
         ampm = 'AM';
