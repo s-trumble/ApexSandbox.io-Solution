@@ -11,7 +11,7 @@ public String changeTimeFormat(String strTime) {
         intHours = intHours + 12;
     }
     
-    else if (intHours < 12 ){
+    else if (intHours <= 12 ){
         ampm = 'AM';
          
         strHours = String.valueOf(intHours);
