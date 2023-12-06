@@ -11,7 +11,7 @@ public String changeTimeFormat(String strTime) {
         intHours = intHours + 12;
         strHours = String.valueOf(intHours);
     }
-    
+    // before 10am need to add a leading 0
     else if (intHours < 10 ){
         ampm = 'AM';         
         strHours = '0' + String.valueOf(intHours);
@@ -19,10 +19,12 @@ public String changeTimeFormat(String strTime) {
     else if (intHours < 12){
         ampm = 'AM';
     }
-
+    //midday just add PM
     else if (intHours == 12){
         ampm = 'PM';
     }
+    //before 10pm need to add a leading 0
+    // subtract 12 hours to convert 24hr to 12hr
     else if (intHours < 22){
         ampm = 'PM';
         intHours = intHours - 12;
