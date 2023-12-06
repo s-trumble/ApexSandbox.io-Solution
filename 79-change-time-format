@@ -4,7 +4,14 @@ public String changeTimeFormat(String strTime) {
     Integer intHours = Integer.valueOf(strHours);
     String minutes = strTime.substringAfter(':');
     String ampm;
-    if (intHours < 12 ){
+    
+    //00 hours to 12am
+    if (strHours = '00'){
+        ampm = 'AM'
+        intHours = intHours + 12;
+    }
+    
+    else if (intHours < 12 ){
         ampm = 'AM';
          
         strHours = String.valueOf(intHours);
