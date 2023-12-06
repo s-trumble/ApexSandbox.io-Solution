@@ -8,7 +8,7 @@ public String changeTimeFormat(String strTime) {
     //00 hours to 12am
     if (strHours == '00'){
         ampm = 'AM';
-        intHours = intHours + 12
+        intHours = intHours + 12;
         strHours = String.valueOf(intHours);
     }
     
