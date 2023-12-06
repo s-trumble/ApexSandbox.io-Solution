@@ -1,12 +1,6 @@
 public String nameFromEmail(String email) {
-    String name = email;
-    name = name.substringBefore('.');
-    system.Debug(name);
-    name = name.subtringBetween('.','@');
-    system.Debug(name);
-    name = name.toLowerCase();
-    system.Debug(name);
-    name = name.capitalize();
-    system.Debug(name);
+    String firstname = email.substringBefore('.').toLowerCase().capitalize();
+    String lastname = email.substringBetween('.','@').toLowerCase().capitalize();
+    String name = firstname + lastname;
     return name;
 }
