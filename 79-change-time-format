@@ -23,6 +23,11 @@ public String changeTimeFormat(String strTime) {
     else if (intHours == 12){
         ampm = 'PM';
     }
+    else if (intHours < 22){
+        ampm = 'PM';
+        intHours = intHours - 12;
+        strHours = '0' + String.valueOf(intHours); 
+    }
     else {
         ampm = 'PM';
         intHours = intHours - 12;
