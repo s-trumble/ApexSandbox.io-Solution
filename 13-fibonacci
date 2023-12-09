@@ -15,7 +15,7 @@ public Integer fibonacci(Integer n) {
             fibnumber = a + b;
         
             a=b;
-            b=c;
+            b=fibnumber;
             
         }        
     }
