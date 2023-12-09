@@ -7,7 +7,7 @@ public Integer fibonacci(Integer n) {
     Integer fib;
 
     if (n ==1 || n==2){
-        return int2;
+        return a;
     }
     else {
 
