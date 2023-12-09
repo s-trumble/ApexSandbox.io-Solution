@@ -1,12 +1,16 @@
 public Integer nextPrime(Integer num) {
     //code here
+    if (num < 2){
+        return 2;
+    }
     Boolean isPrime = false;
+    Integer nextPrime = num + 1;
 
-    for(Integer i = num + 1; isPrime = false; i++){
-        if(Math.mod(num,i)==0){
+    for(Integer i = 2; i < nextPrime; i++){
+        if(Math.mod(nextPrime,i)==0){
             isPrime = true;
             break;
         }
-        return i;
+        return nextPrime;
     }
 }
