@@ -3,8 +3,7 @@ public Integer fibonacci(Integer n) {
     //List<Integer> numbers = new List<Integer>{1,1};
     Integer a = 1;
     Integer b = 1;
-    Integer c;
-    Integer fib;
+    Integer fibnumber;
 
     if (n ==1 || n==2){
         return a;
@@ -13,12 +12,12 @@ public Integer fibonacci(Integer n) {
 
     
     for(Integer i = 3; i <= n; i++ ){
-            c = a + b;
-            fib = c; 
+            fibnumber = a + b;
+        
             a=b;
             b=c;
             
         }        
     }
-    return fib;
+    return fibnumber;
 }
