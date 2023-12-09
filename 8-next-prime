@@ -1,0 +1,13 @@
+public Integer nextPrime(Integer num) {
+    //code here
+    Boolean isPrime = false;
+
+    for(Integer i = num + 1; isPrime = false; i++){
+        if(Math.mod(num,i)==0){
+            isPrime = false;
+        }
+        else{
+            isPrime = true;
+        }
+    }
+}
