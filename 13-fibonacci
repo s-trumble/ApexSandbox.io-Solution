@@ -3,6 +3,7 @@ public Integer fibonacci(Integer n) {
     //List<Integer> numbers = new List<Integer>{1,1};
     Integer int1 = 1;
     Integer int2 = 1;
+    Integer sum;
 
     if (n ==1 || n==2){
         return int2;
@@ -11,6 +12,7 @@ public Integer fibonacci(Integer n) {
 
     
     for(Integer i = 3; i <= n; i++ ){
+            sum = int1 + int2;
             int1 = i; 
             int2 = int1 + int2;
         }        
