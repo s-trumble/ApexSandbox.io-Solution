@@ -8,6 +8,7 @@ public Integer nextPrime(Integer num) {
         }
         else{
             isPrime = true;
+            return i;
         }
         return i;
     }
