@@ -6,10 +6,9 @@ public Integer nextPrime(Integer num) {
     Boolean isPrime = false;
     Integer nextPrime = num + 1;
 
-    for(Integer i = 2; i < nextPrime; i++){
+    for(Integer i = 2; isPrime = false; i++){
         if(Math.mod(nextPrime,i)==0){
-            isPrime = true;
-            break;
+            isPrime = false;
         }
         return nextPrime;
     }
