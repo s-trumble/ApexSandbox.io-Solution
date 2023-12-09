@@ -10,7 +10,6 @@ public Integer nextPrime(Integer num) {
         if(Math.mod(nextPrime,i)==0){
             isPrime = false;
         }
-        return nextPrime;
     }
     return nextPrime;
 }
