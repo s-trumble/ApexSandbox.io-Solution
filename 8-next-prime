@@ -8,7 +8,8 @@ public Integer nextPrime(Integer num) {
     while (isPrime=false(nextPrime)){
         nextPrime += 1;
     }
-    return nextPrime;    
+    return nextPrime;  
+}      
 public Boolean isPrime(Integer nextPrime){
     for (Integer i =2; i < nextPrime; i++){
         if (Math.mod(nextPrime,i)==0){
@@ -16,5 +17,4 @@ public Boolean isPrime(Integer nextPrime){
         }
     }
     return true;
-}
 }
