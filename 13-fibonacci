@@ -13,8 +13,9 @@ public Integer fibonacci(Integer n) {
     
     for(Integer i = 3; i <= n; i++ ){
             sum = int1 + int2;
-            int1 = i; 
+            
             int2 = int1 + int2;
+            int1 = i; 
         }        
     }
     return sum;
