@@ -3,8 +3,9 @@ public Integer nextPrime(Integer num) {
     if (num < 2){
         return 2;
     }
-    Boolean isPrime = false;
+
     Integer nextPrime = num + 1;
+    Boolean isPrime = false;    
 
     for(Integer i = 2; i = num - 1; i++){
         if(Math.mod(nextPrime,i)==0){
