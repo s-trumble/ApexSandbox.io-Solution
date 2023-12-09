@@ -11,6 +11,7 @@ public Integer nextPrime(Integer num) {
         if(Math.mod(nextPrime,i)==0){
             isPrime = false;
         }
+        isPrime = true;
     }
-    return nextPrime;
+    return i;
 }
