@@ -1,11 +1,11 @@
 public Integer fibonacci(Integer n) {
     //code here
     //List<Integer> numbers = new List<Integer>{1,1};
-    Integer int1;
-    Integer int2;
+    Integer int1 == 1;
+    Integer int2 == 1;
 
     if (n ==1 || n==2){
-        return 1;
+        return int2;
     }
     else {
 
