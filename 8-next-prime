@@ -4,15 +4,16 @@ public Integer nextPrime(Integer num) {
         return 2;
     }
 
-    Integer nextPrime = num + 1;
-    while (isPrime=false(nextPrime)){
-        nextPrime += 1;
+    Integer candidate = num + 1;
+    while (isPrime=false(candidate)){
+        candidate += 1;
     }
     return nextPrime;  
 }      
-public Boolean isPrime(Integer nextPrime){
-    for (Integer i =2; i < nextPrime; i++){
-        if (Math.mod(nextPrime,i)==0){
+
+public Boolean isPrime(Integer candidate){
+    for (Integer i =2; i < candidate; i++){
+        if (Math.mod(candidate,i)==0){
             return false;
         }
     }
