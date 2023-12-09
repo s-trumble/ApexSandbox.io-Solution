@@ -5,10 +5,11 @@ public Integer nextPrime(Integer num) {
     }
 
     Integer candidate = num + 1;
+
     while (!isPrime(candidate)){
         candidate += 1;
     }
-    return nextPrime;  
+    return candidate;  
 }      
 
 public Boolean isPrime(Integer candidate){
