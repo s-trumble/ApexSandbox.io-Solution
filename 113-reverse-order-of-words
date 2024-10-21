@@ -1,8 +1,9 @@
 public String reverseWordsInASentence(String sentence){
     //your flawless code here
     //split the sentence on each space and put in list
-    sentence.split(' ');
+    List<string> sentenceList = sentence.split(' ');
     //print list
+    System.debug(sentenceList);
     //change list order
     //print result
 }
