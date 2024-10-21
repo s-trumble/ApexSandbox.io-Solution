@@ -1,9 +1,14 @@
 public String reverseWordsInASentence(String sentence){
-    //your flawless code here
-    //split the sentence on each space and put in list
-    List<string> sentenceList = sentence.split(' ');
-    //print list
-    System.debug(sentenceList);
-    //change list order
-    //print result
+    List<String> sentenceList = sentence.split(' ');
+        System.debug('Convert sentence to a list: ' + sentenceList);
+        //reverse list order
+        List<String> reverseList = new List<String>();
+        for(Integer i = sentenceList.size()-1; i >= 0; i--){
+            reverseList.add(sentenceList.get(i));
+            System.debug('i = ' + i + ' reverseList: ' + reverseList );
+
+        }
+        String reversedSentence = String.join(reverseList,' ');
+        System.debug('reversed sentence: ' + reversedSentence);
+        return reversedSentence;
 }
