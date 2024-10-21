@@ -1,7 +1,7 @@
 public Boolean isTypeAccount(sObject record)
 {
    
-        Boolean result;
+        Boolean result = false;
 
         String objectType = record.getSObjectType().getDescribe().getName();
         System.debug('Object Type: ' + objectType);
