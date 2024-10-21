@@ -1,15 +1,14 @@
 public Boolean isTypeAccount(sObject record)
-{
-   
+ {
         Boolean result = false;
 
-        String objectType = record.getSObjectType().getDescribe().getName();
-        System.debug('Object Type: ' + objectType);
-        if(objectType == 'Account'){
-            result = true;
-        } else {
-            result = false;
-        }
+        if(record != null){
+            String objectType = record.getSObjectType().getDescribe().getName();
+            System.debug('Object Type: ' + objectType);
+            if(objectType == 'Account'){
+                result = true;
+            }
+        }   
+
         return result;
-    
-}
+    }
