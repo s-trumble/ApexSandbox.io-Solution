@@ -1,5 +1,6 @@
 public String reverseWordsInASentence(String sentence){
-   if(sentence != null){
+ String reversedSentence;
+        if(sentence != null){
             List<String> sentenceList = sentence.split(' ');
             System.debug('Convert sentence to a list: ' + sentenceList);
             //reverse list order
@@ -9,10 +10,8 @@ public String reverseWordsInASentence(String sentence){
                 System.debug('i = ' + i + ' reverseList: ' + reverseList );
 
             }
-            String reversedSentence = String.join(reverseList,' ');
+            reversedSentence = String.join(reverseList,' ');
             System.debug('reversed sentence: ' + reversedSentence);
-            
-
         }
         return reversedSentence;
     
