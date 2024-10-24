@@ -1,7 +1,7 @@
 public String convert15to18DigitId(String fifteenDigit)
 {
 
-    String Id_18_char = System.fifteenDigit.to18('0D5B000001DVM9tkAh');
+    String Id_18_char = System.convert15to18DigitId(fifteenDigit);
     ID Id_18_Id = Id_18_char;
 
     return Id_18_Id;
