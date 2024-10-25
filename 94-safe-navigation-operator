@@ -1,6 +1,9 @@
 public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
    // Code here
-   return [Select BillingCity 
+
+   String result = [Select BillingCity 
             FROM Account 
-            WHERE Id = accounts[0].id]?.toUpperCase();
+            WHERE Id = accounts[0].id]?.toUpperCase(); 
+        
+   return result; 
 }
