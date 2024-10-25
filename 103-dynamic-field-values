@@ -1,10 +1,10 @@
 public List<String> getFieldsValue(Account acc, List<String> fields)
 {
     // code here
-    List<String> result = new List<String>();
+    List<SObject> result = new List<SObject>();
 
-    for(Integer i = 0; i<fields.size() ; i++){
-        result.add(get(acc.[i]));
+    for(String field : fields){
+        result.add(getSObjectType.acc(field));
     }
     return result;
 }
