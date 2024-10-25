@@ -1,0 +1,17 @@
+public List<Account> checkAccounts(List<Account> accounts)
+{
+    // code here 
+    if(accounts == null){
+        throw new System.IllegalArumentException('accounts should not be null');
+    }
+    for(Account acc : accounts){
+        if(acc.BillingCity == null){
+            throw new AccountException('Invalid BillingCity');
+        }
+        
+    }
+    return accounts;
+}
+
+//do not remove the following custom-defined exception
+public class AccountException extends Exception {}
