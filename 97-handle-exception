@@ -6,6 +6,6 @@ public String divide(Integer a, Integer b){
         return 'Divide by 0';
     } else {
         Integer result = a/b;
-        return result;
+        return (String)result.toString());
     }
 }
