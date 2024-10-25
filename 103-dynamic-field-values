@@ -2,7 +2,7 @@ public List<String> getFieldsValue(Account acc, List<String> fields)
 {
     // code here
     List<String> result;
-    for(Integer i = 0; i<fields.length() ; i++){
+    for(Integer i = 0; i<fields.size() ; i++){
         result.add(acc.[i]);
     }
     return result;
