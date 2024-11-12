@@ -3,9 +3,6 @@ public Id insertStudent(String name, String email) {
     apxio__Student__c student = new apxio__Student__c(Name = name, email = apxio__Email__c);
     insert student;
 
-    Id studentId = [SELECT Id
-                    FROM apxio__Student__c
-                    WHERE Name = name
-                    AND apxio__Email__c = email];
+    Id studentId = student.Id;
     return studentId;
 }
