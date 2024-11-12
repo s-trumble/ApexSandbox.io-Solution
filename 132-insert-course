@@ -3,14 +3,14 @@ public Id insertCourse(String name, String details, Integer credits) {
     apxio__Course__c course = new apxio__Course__c();
     course.Name = name;
     course.apxio__Course_Details__c = details;
-    if(credits == '1' || credits == '2' || credits == '3' || credits == '4'){
-        course.axio__Credits__c = credits;
+    if(credits == 1 || credits == 2 || credits == 3 || credits == 4){
+        course.axio__Credits__c = String.valueOf(credits);
     }else (
         course.axio__Credits__c = null;
         )
     
     insert course;
-    
+
     Id courseId = course.Id;
     return courseId;
 }
