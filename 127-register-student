@@ -8,7 +8,7 @@ public String registerStudent(String name, String phone, String email) {
     insert student;
     List<apxio__Student__c> registrationNumber = [SELECT apxio__Registration_Number__c
                         FROM apxio__Student__c
-                        WHERE Id = student.Id
+                        WHERE Id = :student.Id
                         Limit 1];
 
     return registrationNumber[0].apxio__Registration_Number__c;
