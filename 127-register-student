@@ -11,5 +11,5 @@ public String registerStudent(String name, String phone, String email) {
                         WHERE Id = student.Id
                         Limit 1];
 
-    return registrationNumber;
+    return registrationNumber[0].apxio__Registration_Number__c;
 }
