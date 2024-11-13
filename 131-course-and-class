@@ -13,7 +13,7 @@ public void createCourseAndClass(String name, String description) {
     Integer maxSize = 255;
        if(description == null){
        }
-       else if(description.length() >= maxSize){
+       else if(description.length() > maxSize){
         courseClass.apxio__Description__c = description.substring(0,maxSize);
         }
     else {
