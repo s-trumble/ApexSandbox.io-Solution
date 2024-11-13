@@ -14,7 +14,7 @@ public void createCourseAndClass(String name, String description) {
        if(description == null){
        }
        else if(description.length() >= maxSize){
-        courseClass.apxio__Description__c = description.substring(0,255);
+        courseClass.apxio__Description__c = description.substring(0,maxSize);
         }
     else {
         courseClass.apxio__Description__c = description;
