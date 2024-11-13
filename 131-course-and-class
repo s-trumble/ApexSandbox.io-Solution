@@ -10,8 +10,14 @@ public void createCourseAndClass(String name, String description) {
     apxio__Class__c courseClass = new apxio__Class__c();
     courseClass.apxio__Course__c = course.Id;
     courseClass.Name = name;
-       if(description != null){
+    Integer maxSize = 255;
+       if(description == null){
+       }
+       else if(description.length() >= maxSize){
         courseClass.apxio__Description__c = description.substring(0,255);
+        }
+    else {
+        courseClass.apxio__Description__c = description;
     }
     insert courseClass;
 
