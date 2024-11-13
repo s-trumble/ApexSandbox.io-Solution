@@ -5,5 +5,5 @@ public List<apxio__Student__c> selectUnreachableStudents() {
                                         WHERE apxio__Email__c = null
                                         AND apxio__Phone__c = null
                                         ORDER BY Name];
-    return unreachableStudents desc;
+    return unreachableStudents;
 }
