@@ -11,7 +11,7 @@ public void createCourseAndClass(String name, String description) {
     courseClass.apxio__Course__c = course.Id;
     courseClass.Name = name;
        if(description != null){
-        courseClass.apxio__Description__c = description;
+        courseClass.apxio__Description__c = description.substring(0,255);
     }
     insert courseClass;
 
