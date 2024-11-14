@@ -1,12 +1,12 @@
 public Id classFromCourse(String courseName) {
     // code here
-    Id course = [SELECT Id
+    List<apxio__Course__c> course = [SELECT Id
                 FROM apxio__Course__c
                 WHERE Name = :courseName
                 Limit 1];
 
     if(course != null){
-        apxio__Class__c newClass = new apxio__Class__c(Name = courseName, apxio__Course__c = course);
+        apxio__Class__c newClass = new apxio__Class__c(Name = courseName, apxio__Course__c = course[0].Id);
         insert newClass;
     } else {
         return null;
