@@ -3,7 +3,7 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
     // code here
     List<sObject> sObjects = new List<sObject>();
     
-    if(!accounts.isEmpty()){
+    if(accounts != null){
         for(Integer i=0; i < accounts.size(); i++){
             Account a = new Account();
             a.Name = accounts[i].Name;
@@ -11,7 +11,7 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
         }
     }
 
-    if(!contacts.isEmpty()){
+    if(contacts != null()){
         for(Integer j=0; j < contacts.size(); j++){
             Contact c = new Contact();
             c.LastName = contacts[j].LastName;
