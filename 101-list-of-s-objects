@@ -3,11 +3,11 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
     // code here
     List<sObject> sObjects = new List<sObject>();
     sObject s = new sObject();
-    for(Integer i=0, i < accounts.size(); i++){
+    for(Integer i=0; i < accounts.size(); i++){
         s.Name = accounts[i].Name;
         sObjects.add(s);
     }
-    for(Integer j=0, j < contacts.size(); j++){
+    for(Integer j=0; j < contacts.size(); j++){
         s.LastName = contacts[i].LastName;
         sObjects.add(s);
     }
