@@ -10,10 +10,13 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
             sObjects.add(a);
         }
     }
-    for(Integer j=0; j < contacts.size(); j++){
-        Contact c = new Contact();
-        c.LastName = contacts[j].LastName;
-        sObjects.add(c);
+
+    if(!contacts.isEmpty()){
+        for(Integer j=0; j < contacts.size(); j++){
+            Contact c = new Contact();
+            c.LastName = contacts[j].LastName;
+            sObjects.add(c);
+        }
     }
     return sObjects;
 }
