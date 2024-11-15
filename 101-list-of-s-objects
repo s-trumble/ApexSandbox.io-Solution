@@ -1,22 +1,21 @@
-public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> contacts)
-{
-    // code here
+public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> contacts) {
     List<sObject> sObjects = new List<sObject>();
     
-    if(accounts != null){
-        for(Integer i=0; i < accounts.size(); i++){
+    if (accounts != null && !accounts.isEmpty()) {
+        for (Integer i = 0; i < accounts.size(); i++) {
             Account a = new Account();
             a.Name = accounts[i].Name;
             sObjects.add(a);
         }
     }
 
-    if(contacts != null()){
-        for(Integer j=0; j < contacts.size(); j++){
+    if (contacts != null && !contacts.isEmpty()) {
+        for (Integer j = 0; j < contacts.size(); j++) {
             Contact c = new Contact();
             c.LastName = contacts[j].LastName;
             sObjects.add(c);
         }
     }
+    
     return sObjects;
 }
