@@ -4,12 +4,12 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
     List<sObject> sObjects = new List<sObject>();
     
     for(Integer i=0; i < accounts.size(); i++){
-        sObject a = new Account();
+        Account a = new Account();
         a.Name = accounts[i].Name;
         sObjects.add(a);
     }
     for(Integer j=0; j < contacts.size(); j++){
-        sObject c = new Contact();
+        Contact c = new Contact();
         c.LastName = contacts[j].LastName;
         sObjects.add(c);
     }
