@@ -13,5 +13,5 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
         c.LastName = contacts[i].LastName;
         sObjects.add(c);
     }
-    return JSON.serialize(sObjects);
+    return sObjects;
 }
